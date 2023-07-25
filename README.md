@@ -19,7 +19,7 @@ Additional Note: Making OpenCV may use too much memory on the board, so feel fre
 ```
 cmake -DCMAKE_INSTALL_PREFIX=/usr/local -DOPENCV_EXTRA_MODULES_PATH=../../opencv_contrib-master/modules -DWITH_IPP=OFF -DWITH_GSTREAMER=ON -DWITH_GTK=OFF -DWITH_WAYLAND=ON -DBUILD_opencv_python3=yes ..
 
-#make instead of make -j7 if board is unable to handle building in parallel
+# use make instead of make -j7 if board is unable to handle building in parallel
 make -j7 && make install
 ```
 
